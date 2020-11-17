@@ -10,10 +10,18 @@ public class Person
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s %s (%d)",
+            firstName,
+            lastName,
+            age
+        );
+    }
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\
-    *                              GETTERS AN SETTERS                             *
-    \* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+        *                              GETTERS AN SETTERS                             *
+        \* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
     public String getFirstName() {
         return firstName;
     }

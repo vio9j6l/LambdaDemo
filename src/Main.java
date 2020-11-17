@@ -17,8 +17,23 @@ public class Main {
     );
 
     public static void main(String[] args) {
+        System.out.println("Traditional: ");
 	      for (Person person : people) {
 	          showPerson(person);
         }
+
+        System.out.println("\nLambda 1: ");
+	      people.forEach(
+            (Person p) -> {
+                System.out.println(p);
+            }
+        );
+
+        System.out.println("\nLambda 2: ");
+        people.forEach(
+            (Person p) -> {
+                System.out.println(p);
+            }
+        );
     }
 }
