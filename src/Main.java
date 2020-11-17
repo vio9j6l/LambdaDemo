@@ -31,9 +31,11 @@ public class Main {
 
         System.out.println("\nLambda 2: ");
         people.forEach(
-            (Person p) -> {
-                System.out.println(p);
-            }
+            p
+                -> System.out.println(p)
         );
+
+        System.out.println("\nLambda 3: ");
+        people.forEach(p -> System.out.println(p));
     }
 }
