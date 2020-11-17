@@ -37,5 +37,9 @@ public class Main {
 
         System.out.println("\nLambda 3: ");
         people.forEach(p -> System.out.println(p));
+
+        // :: two colons are called a method reference operator
+        System.out.println("\nLambda 4: ");
+        people.forEach(System.out::println);
     }
 }
