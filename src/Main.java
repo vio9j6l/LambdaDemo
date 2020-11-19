@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -41,5 +42,15 @@ public class Main {
         // :: two colons are called a method reference operator
         System.out.println("\nLambda 4: ");
         people.forEach(System.out::println);
+
+        for (Person person : people) {
+            System.out.println(person);
+        }
+        Collections.sort(people);
+
+        System.out.println("\nSorted by last name:");
+        for (Person person: people) {
+            System.out.println(person);
+        }
     }
 }

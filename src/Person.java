@@ -1,4 +1,5 @@
-public class Person
+public class Person implements Comparable<Person>
+
 {
     private String firstName;
     private String lastName;
@@ -44,6 +45,12 @@ public class Person
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public int compareTo(Person otherPerson) {
+        int result = this.lastName.compareTo(otherPerson.lastName);
+        return result;
     }
 }
 
