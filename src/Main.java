@@ -43,6 +43,8 @@ public class Main {
         System.out.println("\nLambda 4: ");
         people.forEach(System.out::println);
 
+        System.out.println("----------------------------------------------------");
+        System.out.println("\nUnsorted:");
         for (Person person : people) {
             System.out.println(person);
         }
